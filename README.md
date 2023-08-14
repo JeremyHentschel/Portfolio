@@ -4,7 +4,7 @@ Here you will find examples of Jeremy Hentschel's past projects.
 # Marvel Crisis Protocol Character Database and Web Server 
 The "MarvelServer" files were constructed to utilize a Python Flask web server to interact with a MariaDB SQL database that holds a data set of the characters' attributes for the tabletop game Marvel Crisis Protocol.  This was devised to help keep track of the characters and their attributes in the game and track similarities between them.  
 
-Be sure to take a look at MarvelServerReadMe.md for more instructions on how to utilize this program. 
+Be sure to take a look at MarvelServer ReadMe.md for more instructions on how to utilize this program. 
 You'll want to download "MarvelServer.py" and "MarvelServer_rest-client.rest" and have MariaDB installed to make full use of the program. 
 
 # Store Inventory and Orders 
