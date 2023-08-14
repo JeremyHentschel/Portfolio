@@ -1,0 +1,45 @@
+GET http://localhost:5111/
+
+###
+GET http://localhost:5111/characters
+
+###
+GET http://localhost:5111/characters/13
+
+###
+POST http://localhost:5111/characters
+Content-Type: application/json
+
+{"name":"Scream", "threat":"3", "health":"5", "affiliation":"Brotherhood"}
+
+###
+POST http://localhost:5111/characters/bulk
+Content-Type: application/json
+
+[
+{"name":"Magneto", "threat":"6", "health":"6", "affiliation":"Brotherhood , Cabal"},
+{"name":"Mystique", "threat":"3", "health":"5", "affiliation":"Brotherhood , Cabal"},
+{"name":"Pyro", "threat":"3", "health":"5",  "affiliation":"Brotherhood"},
+{"name":"The Blob", "threat":"3", "health":"6", "affiliation":"Brotherhood"},
+{"name":"Toad", "threat":"2", "health":"5", "affiliation":"Brotherhood"},
+{"name":"Scarlet Witch", "threat":"5", "health":"6", "affiliation":"Avengers , Brotherhood"},
+{"name":"Emma Frost", "threat":"4", "health":"6", "affiliation":"Brotherhood , HellfireClub , Xmen"},
+{"name":"Rogue", "threat":"4", "health":"6", "affiliation":"Brotherhood , Xmen"},
+{"name":"Juggernaut", "threat":"5", "health":"8", "affiliation":"Brotherhood"},
+{"name":"Colossus", "threat":"3", "health":"6", "affiliation":"Brotherhood , XForce , XMen"},
+{"name":"Gambit", "threat":"3", "health":"5", "affiliation":"Brotherhood , XMen"},
+{"name":"Quicksilver", "threat":"3", "health":"5", "affiliation":"Avengers , Brotherhood"},
+{"name":"Sabretooth", "threat":"4", "health":"7", "affiliation":"Brotherhood , Cabal , XForce"}
+]
+
+###
+GET http://localhost:5111//characters/query?threat=3&health=5
+
+###
+DELETE http://localhost:5111/characters/13
+
+###
+PUT http://localhost:5111/characters/13
+Content-Type: application/json
+
+{"name": "Cloak", "threat": "6", "health": "8", "affiliation":"Avengers"}
